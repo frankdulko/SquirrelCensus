@@ -13,9 +13,15 @@
 		918226E72C505444006951FB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 918226E62C505444006951FB /* Base */; };
 		918226E92C505445006951FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 918226E82C505445006951FB /* Assets.xcassets */; };
 		918226EC2C505445006951FB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 918226EB2C505445006951FB /* Base */; };
+		91E6556C2C51797C00567C23 /* SquirrelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E6556B2C51797C00567C23 /* SquirrelModel.swift */; };
+		91E6556E2C5180A600567C23 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E6556D2C5180A600567C23 /* Extensions.swift */; };
+		94AAD98F7CD4B03281658D52 /* Pods_SquirrelCensus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3075E2A317A47C2416E0C6D5 /* Pods_SquirrelCensus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3075E2A317A47C2416E0C6D5 /* Pods_SquirrelCensus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquirrelCensus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34C1E5AEE2D244F7F82D92D1 /* Pods-SquirrelCensus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquirrelCensus.debug.xcconfig"; path = "Target Support Files/Pods-SquirrelCensus/Pods-SquirrelCensus.debug.xcconfig"; sourceTree = "<group>"; };
+		4543CEB37B22D432CBA09F6D /* Pods-SquirrelCensus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquirrelCensus.release.xcconfig"; path = "Target Support Files/Pods-SquirrelCensus/Pods-SquirrelCensus.release.xcconfig"; sourceTree = "<group>"; };
 		918226DC2C505444006951FB /* SquirrelCensus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquirrelCensus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		918226DF2C505444006951FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		918226E12C505444006951FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		918226E82C505445006951FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		918226EB2C505445006951FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		918226ED2C505445006951FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91E6556B2C51797C00567C23 /* SquirrelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquirrelModel.swift; sourceTree = "<group>"; };
+		91E6556D2C5180A600567C23 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94AAD98F7CD4B03281658D52 /* Pods_SquirrelCensus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DDA2C92926705B3DE8056BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34C1E5AEE2D244F7F82D92D1 /* Pods-SquirrelCensus.debug.xcconfig */,
+				4543CEB37B22D432CBA09F6D /* Pods-SquirrelCensus.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		48A4A0B5051332DC50BDD97D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3075E2A317A47C2416E0C6D5 /* Pods_SquirrelCensus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		918226D32C505444006951FB = {
 			isa = PBXGroup;
 			children = (
 				918226DE2C505444006951FB /* SquirrelCensus */,
 				918226DD2C505444006951FB /* Products */,
+				1DDA2C92926705B3DE8056BA /* Pods */,
+				48A4A0B5051332DC50BDD97D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +84,7 @@
 		918226DE2C505444006951FB /* SquirrelCensus */ = {
 			isa = PBXGroup;
 			children = (
+				91E6556A2C51796600567C23 /* Resources */,
 				918226DF2C505444006951FB /* AppDelegate.swift */,
 				918226E12C505444006951FB /* SceneDelegate.swift */,
 				918226E32C505444006951FB /* ViewController.swift */,
@@ -67,6 +96,15 @@
 			path = SquirrelCensus;
 			sourceTree = "<group>";
 		};
+		91E6556A2C51796600567C23 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				91E6556B2C51797C00567C23 /* SquirrelModel.swift */,
+				91E6556D2C5180A600567C23 /* Extensions.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 918226F02C505445006951FB /* Build configuration list for PBXNativeTarget "SquirrelCensus" */;
 			buildPhases = (
+				56C8667A7A92D7FD9C44A5B6 /* [CP] Check Pods Manifest.lock */,
 				918226D82C505444006951FB /* Sources */,
 				918226D92C505444006951FB /* Frameworks */,
 				918226DA2C505444006951FB /* Resources */,
+				C45CA5602CA037455E5EA7BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,13 +173,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56C8667A7A92D7FD9C44A5B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SquirrelCensus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C45CA5602CA037455E5EA7BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SquirrelCensus/Pods-SquirrelCensus-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SquirrelCensus/Pods-SquirrelCensus-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SquirrelCensus/Pods-SquirrelCensus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		918226D82C505444006951FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91E6556E2C5180A600567C23 /* Extensions.swift in Sources */,
 				918226E42C505444006951FB /* ViewController.swift in Sources */,
 				918226E02C505444006951FB /* AppDelegate.swift in Sources */,
+				91E6556C2C51797C00567C23 /* SquirrelModel.swift in Sources */,
 				918226E22C505444006951FB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,12 +371,14 @@
 		};
 		918226F12C505445006951FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34C1E5AEE2D244F7F82D92D1 /* Pods-SquirrelCensus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5RF7XV65SP;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SquirrelCensus/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -315,12 +401,14 @@
 		};
 		918226F22C505445006951FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4543CEB37B22D432CBA09F6D /* Pods-SquirrelCensus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5RF7XV65SP;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SquirrelCensus/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
